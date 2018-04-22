@@ -1,11 +1,11 @@
 ### Prerequisites
 
-Install mongo
+    Install mongo
 
-Create user/password on database
+    Create user/password on database
 
-On mongodb shell ->
-    use databa
+#####On mongodb shell ->
+    use database
     db.createUser(
       {
         user: "admin",
@@ -15,25 +15,25 @@ On mongodb shell ->
                  { role: "readWriteAnyDatabase", db: "admin" } ]
       }
     )
-   
-Update application.properties with correct values.
+ 
+    Update application.properties with correct values.
 
-Additional notes
+### Additional notes
 
-install robo 3T to display records.
+    Install robo 3T to display records.
 
-Bad Introduction to DependecyInjection
 
-Well, the IoC managed by Spring, will lookup for annotations like
-@Component
-@Service
-@Repository
-@Configuration
+### Bad Introduction to DependecyInjection (by kiquetal)
 
-You `expose` this object , to be automatically injected using `Autowired`,
-what do you expose?
+    Well, the IoC managed by Spring, will lookup for annotations like
+    @Component
+    @Service
+    @Repository
+    @Configuration
 
-You expose `implementations` but reference by Autowired the interface.
+ You `expose` this object , to be automatically injected using `Autowired`,
+  what do you expose?
+ You expose `implementations` but reference by Autowired interfaces.
 
 
 
