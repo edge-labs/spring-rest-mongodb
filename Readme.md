@@ -34,6 +34,6 @@
  You `expose` this object , to be automatically injected using `Autowired`,
   what do you expose?
  You expose `implementations` but reference by Autowired interfaces.
-
-
+ Ex: Exists an interface Service, and implementations ServiceImpl, you `expose` the ServiceImpl,
+ but reference this object using the interface annotated with  `Autowired` (Liskov Subtitution.)
 
