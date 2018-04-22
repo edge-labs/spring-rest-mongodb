@@ -21,3 +21,19 @@ Update application.properties with correct values.
 Additional notes
 
 install robo 3T to display records.
+
+Bad Introduction to DependecyInjection
+
+Well, the IoC managed by Spring, will lookup for annotations like
+@Component
+@Service
+@Repository
+@Configuration
+
+You `expose` this object , to be automatically injected using `Autowired`,
+what do you expose?
+
+You expose `implementations` but reference by Autowired the interface.
+
+
+
